@@ -6,21 +6,19 @@
 // Infine stampa separatamente i 3 array.
 
 const carsList = [
-    { brad: 'Toyota', model: 'Yaris', fuel: 'benzina' },
-    { brad: 'Volkswagen', model: 'Golf', fuel: 'diesel' },
-    { brad: 'Ferrari', model: 'V10', fuel: 'elettrico' },
-    { brad: 'Fiat', model: 'Panda', fuel: 'gpl' },
-    { brad: 'Renault', model: 'Clio', fuel: 'diesel' },
-    { brad: 'AstonMartin', model: 'Valhalla', fuel: 'elettrico' },
-    { brad: 'Ford', model: 'Focus', fuel: 'benzina' },
-    { brad: 'Cytroen', model: 'C3', fuel: 'diesel' },
-    { brad: 'Hyundai', model: 'Kona', fuel: 'elettrico' },
-    { brad: 'Mercedes', model: 'GLC', fuel: 'metano' },
+    { brand: 'Toyota', model: 'Yaris', fuel: 'benzina' },
+    { brand: 'Volkswagen', model: 'Golf', fuel: 'diesel' },
+    { brand: 'Ferrari', model: 'V10', fuel: 'elettrico' },
+    { brand: 'Fiat', model: 'Panda', fuel: 'gpl' },
+    { brand: 'Renault', model: 'Clio', fuel: 'diesel' },
+    { brand: 'AstonMartin', model: 'Valhalla', fuel: 'elettrico' },
+    { brand: 'Ford', model: 'Focus', fuel: 'benzina' },
+    { brand: 'Cytroen', model: 'C3', fuel: 'diesel' },
+    { brand: 'Hyundai', model: 'Kona', fuel: 'elettrico' },
+    { brand: 'Mercedes', model: 'GLC', fuel: 'metano' },
 ];
 
 console.log(carsList);
-
-// Dividi le automobili in 3 array separati: nel primo array solo le auto a benzina, nel secondo solo le auto a diesel, nel terzo il resto delle auto.
 
 const autoBenzina = carsList.filter(auto => auto.fuel === 'benzina');
 console.log(autoBenzina);
@@ -30,3 +28,5 @@ console.log(autoDiesel);
 
 const autoMetano = carsList.filter(auto => auto.fuel === 'metano');
 console.log(autoMetano);
+
+
