@@ -18,3 +18,15 @@ const carsList = [
     { brad: 'Mercedes', model: 'GLC', fuel: 'metano' },
 ];
 
+console.log(carsList);
+
+// Dividi le automobili in 3 array separati: nel primo array solo le auto a benzina, nel secondo solo le auto a diesel, nel terzo il resto delle auto.
+
+const autoBenzina = carsList.filter(auto => auto.fuel === 'benzina');
+console.log(autoBenzina);
+
+const autoDiesel = carsList.filter(auto => auto.fuel === 'diesel');
+console.log(autoDiesel);
+
+const autoMetano = carsList.filter(auto => auto.fuel === 'metano');
+console.log(autoMetano);
