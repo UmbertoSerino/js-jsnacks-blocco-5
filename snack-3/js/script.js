@@ -11,5 +11,12 @@ const browserWindow =
     tab: ["Facebook", "GitHub", "Gmail"],
     activeTab: 0
 };
+console.log(browserWindow);
 
-const {tab, activeTab} = browserWindow
+const blackList = ["facebook", "twitter", "github"];
+
+browserWindow.tab = browserWindow.tab.filter((element) => {
+    if(!blackList.includes(element.toLowerCase())){
+        return true;
+    }
+});
