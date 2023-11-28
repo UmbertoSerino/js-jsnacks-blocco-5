@@ -4,9 +4,9 @@
 // punti fatti e falli subiti
 
 const volleyClubs = [
-    {name: "NameA", points: generateNumber(), fouls: "gen"}
-    {name: "NameB", points: "", fouls: ""}
-    {name: "NameC", points: "", fouls: ""}
+    {name: "NameA", points: generateNumber(), fouls: generateNumber()},
+    {name: "NameB", points: generateNumber(), fouls: generateNumber()},
+    {name: "NameC", points: generateNumber(), fouls: generateNumber()}
 
 ];
 console.log(volleyClubs);
@@ -14,6 +14,6 @@ console.log(volleyClubs);
 
 // =========== function =============
 function generateNumber() {
-    Math.floor(Math.random() * 100) +1;
-    return;
+    return Math.floor(Math.random() * 100) + 1;
+
 }
